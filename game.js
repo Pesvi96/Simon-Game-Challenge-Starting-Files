@@ -1,60 +1,3 @@
-// var gamePattern = [];
-// var buttonColors = ["red", "blue", "green", "yellow"];
-// var userClickedPattern = [];
-
-
-
-// function nextSequence(){
-//     var randomNumber = Math.floor(Math.random() * 4);
-//     console.log(randomNumber);
-
-// }
-
-// function makeButtonSound(){
-//     switch (buttonColour) {
-//         case "red":
-//             var sound = new Audio("./sounds/red.mp3");
-//             break;
-//         case "blue":
-//             var sound = new Audio("./sounds/blue.mp3");
-//             break;
-//         case "green":
-//             var sound = new Audio("./sounds/green.mp3");
-//             break;
-//         case "yellow":
-//             var sound = new Audio("./sounds/yellow.mp3");
-//             break;
-//         default:
-//             break;
-//     }
-//     sound.play();
-// }
-
-
-// function whichButtonClicked(){
-//     var buttonColour = $(this).attr('id');
-//     userClickedPattern.push(buttonColour);
-//     console.log(userClickedPattern);
-//     return buttonColour;
-// }
-
-// var randomChosenColour = "red";
-
-// // var randomNumber = Math.floor(Math.random() * 4);
-// // var randomChosenColour = buttonColors[randomNumber];
-// // $("#" + randomChosenColour).fadeOut("fast").fadeIn("fast");
-
-// // gamePattern.push(randomChosenColour);
-
-
-// $("div[type='button']").on("click", whichButtonClicked);
-
-
-
-
-// ------------------------------------- my code --------------------------------------------------------------
-
-
 var gamePattern = [];
 var playerPattern = [];
 var buttonColours = ["green", "red", "yellow", "blue"];
@@ -174,18 +117,3 @@ function gameOver(){
 
 // keypress event listener
 $(document).on("keypress", gameStart);
-
-
-
-
-
-//---------------------
-
-// function simonSaysAnimation(){
-//     for (i=0; i<gamePattern.length; i++){
-//         var button = $("#" + gamePattern[i]);
-//         button.delay(500).fadeOut("fast").fadeIn("fast");
-
-//     }
-//     console.log(gamePattern);
-// }
